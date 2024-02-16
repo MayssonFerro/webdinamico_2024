@@ -1,1 +1,58 @@
-<!-- git init pra iniciar o repositorio (usar apenas 1x) -->
+<!-- 
+    git init -> inicia o repositorio (apenas 1x)
+    git add -> add um arquivo ao repositorio ('add .' para add tudo)
+    git status -> status do repositorio
+    git commit  -m "mensagem/descricao do que foi feito"
+    
+    git push -u origin master -> verificar no vs
+    git push -> enviar repositorio local para repositorio remoto
+
+    git pull -> enviar do repositorio remoto para o repositorio local
+    git clone <caminho do repo> -> somente qnd quiser copiar do remoto
+
+    ### adicionar repositorio remoto (github) ->
+    git remote add origin https://github.com/MayssonFerro/webdinamico_2024.git (apenas 1x)
+    git remote -v -> verificar repositorio remoto
+
+
+    x = 10 ->nao eh uma boa pratica (eh bom sempre usar const ou let)
+    var maysson = 1995 -> somente para browser véio
+    const ifms = 5 // constants (arrays ou objs)
+    let ifms2 = 20 // usado quando nao conseguir usar const
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 1 - Javascript</title>
+</head>
+<body>
+
+</body>
+<script>
+    const ifms = 5; //constants (arrays ou objs)
+    let x = 20;
+    let y = 10;
+    let z = x + y
+
+    let carName = "Corolla"
+        price = 200;
+    
+    let carModel = "Toytota";
+
+    console.log(carModel + " " + carName);
+    console.log(carModel + " " + z);
+
+    // {} objeto
+    const person = {firstName:"Maysson", lastName:"Ferro"}
+
+    // [] vetor, array...
+    const car = ["fusca", "gol", "uno"];
+
+    console.log(car);
+
+    console.log(person);
+</script>
+</html>
