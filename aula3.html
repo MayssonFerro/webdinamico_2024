@@ -5,9 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aula Funções</title>
 </head>
-<body>
-    
-</body>
+<body></body>
 
 <script>
     function inArray(array, valor){
@@ -16,6 +14,26 @@
         }
         return array
     }
+
+    const r = inArray([1, 3, 4], 4)
+
+    console.log(r);
+
+    const f1 = new Function("b", "h", "return (b*h)/2")
+    f1(3, 4);
+
+    const areaTri = function(h, b){ return b*h/2}
+
+
+    // arrow function
+    //sempre usar arrow function como parametro de outra funcao
+    const x = () => {}
+    
+    (a, b) => {
+        return a+b
+    }
+
+
 </script>
 
 </html>
