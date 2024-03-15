@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document Object Model (DOM)</title>
+    </head>
+    <style>
+        html {
+            background-color: rgb(33, 33, 33);
+            color: white;
+        }
+        a {
+            color: lightblue;
+        }
+        .bgRed{
+            background-color: red;
+        }
+        .bgBlue{
+            background-color: blue;
+        }
+        .bgGreen{
+            background-color: green;
+        }
+    </style>
+<body>
+    <p class="bgRed">Lorem ipsum dolor sit amet.</p>
+    <p class="bgBlue">Lorem ipsum dolor sit amet consectetur.</p>
+    <p class="bgRed">Lorem ipsum dolor sit amet.</p>
+    <p class="bgBlue">Lorem ipsum dolor sit amet consectetur.</p>
+</body>
+
+<script>
+    // let resp = document.getElementById("ref1");
+    // let d = document.body.children;
+    // console.log(d)
+    // console.log(resp);
+    // console.log(resp.nodeName);
+    // resp.innerHTML = "Novo texto!";
+    // console.log(resp.id);
+
+    // let listItems = document.getElementsByTagName("li")
+
+    // document.write("<span>Texto dentro dos elementos li</span>")
+    
+    // document.write("<p>Há " + listItems.length + " elementos</p>");
+
+    // listItems[0].innerHTML = "outro texto"
+    // console.log(listItems)
+
+    let bgRed = document.getElementsByClassName("bgRed");
+
+    let bgVermelho = document.querySelector(".bgRed")
+
+    let bgBlue = document.getElementsByClassName("bgBlue");
+
+    console.log(bgVermelho);
+    // console.log(bgBlue);
+    
+    bgRed[0].classList.add("bgGreen;");
+
+
+</script>
+
+
+
+
+
+
+
+</html>

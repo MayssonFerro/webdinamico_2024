@@ -1,0 +1,22 @@
+/* .red {
+    color: red;
+}
+
+.blue {
+    color: blue;
+} */
+
+.small {
+    max-height: 100px;
+    width: 500px;
+    overflow: auto;
+    background: red;
+}
+
+.big {
+    height: 900px;
+    width: 500px;
+    background: blue;
+}
+
+

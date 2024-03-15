@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções e Eventos</title>
+    <style>
+        body {
+            background: rgb(19, 19, 52);
+            color: white;
+        }
+        .res {
+            background: blue;
+            height: 50px;
+            width: 150px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Function and Event</h1>
+
+    <div class="res"></div>
+
+    <input type="text" placeholder="resultado..." id="result">
+
+    <button class="btn" onclick="soma()">Somar</button>
+
+    <script>
+
+        let r = document.getElementsByClassName("res");
+
+        let iresult = document.getElementById("result");
+        
+        function soma() {
+            iresult.value = 2 + 2
+            r[0].innerHTML = 2 + 2
+        }
+
+        
+    </script>
+</body>
+</html>
