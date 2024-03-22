@@ -1,0 +1,31 @@
+.container {
+    display: grid;
+    grid-template-areas:
+    "header section"
+    "aside main"
+    "footer footer"
+    ;
+}
+
+@media (max-width: 391px) {
+    .container {
+        grid-template-areas:
+        "header"
+        "section"
+        "aside"
+        "main"
+        "footer"
+        ;
+    }
+}
+
+/* @media (min-width: 392px) and (max-width:767px) {
+    .container {
+        grid-template-areas:
+        "header header"
+        "section section"
+        "main main"
+        "footer footer"
+        ;
+    }
+} */

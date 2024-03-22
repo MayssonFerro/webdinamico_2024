@@ -1,0 +1,14 @@
+.container {
+    border: 5px solid rgb(0, 0, 46);
+    width: 800px;
+    height: 600px;
+    display: grid;
+    padding: 10px;
+    background: rgb(30, 28, 98);
+    color: white;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+}

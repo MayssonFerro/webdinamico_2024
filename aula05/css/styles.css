@@ -1,0 +1,58 @@
+main {
+    background: rgb(67, 67, 118);
+    width: 100vw;
+    height: 100vh;
+}
+
+header{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 45px;
+    background: rgb(38, 38, 85);
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.mclogo {
+    width: 35px;
+}
+
+.perfil {
+    width: 35px;
+}
+
+.button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(90, 90, 124);
+}
+
+.nome {
+    width: 100px;
+}
+
+.mask {
+    display: none;
+}
+
+.button {
+    background: red;
+    margin-right: 20px;
+    width: 55px;
+}
+
+article {    
+    height: 6%;
+    width: 80px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    background: lightblue;
+}

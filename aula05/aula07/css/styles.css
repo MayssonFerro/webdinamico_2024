@@ -1,0 +1,16 @@
+.box {
+    width: 100px;
+    height: 100px;
+    background: blue;
+    margin: 10px;
+}
+
+.container {
+    display: flex;
+}
+
+@media (max-width: 391px){
+    .container {
+        flex-direction: column;
+    }
+}
