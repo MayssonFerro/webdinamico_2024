@@ -14,5 +14,9 @@ function validar() {
 
 function validarEmail() {
     console.log(nome.value)
-    if (nome.value.indeOf("0"))
+    if (nome.value.indeOf("0")) == -1 || nome.value.indexOf(".") == -1 {
+        error[0].innerHTML = "o email nao e valido"
+    } else {
+        error[0].innerHTML = "";
+    }
 }

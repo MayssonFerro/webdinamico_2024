@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(18, 7, 38);
+}
+
+.error {
+    color: red;
+    font-size: 0.8rem;
+    margin-top: 0.2rem;
+    background: #d58787;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    width: 10rem;
+}
+
+.right {
+    color: green;
+    font-size: 0.8rem;
+    margin-top: 0.2rem;
+    background: #87d58a;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    width: 10rem;
+}
