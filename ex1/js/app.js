@@ -1,49 +1,42 @@
 const container = document.getElementById('container');
 
-// const meuH1 = document.createElement('h1');
-// meuH1.innerText = "Criando um elemento";
-
-// const meuH2 = document.createElement('h2');
-// meuH2.innerText = "Criando um elemento H2!";
-
-// const novaDiv = document.createElement('div');
-// novaDiv.appendChild(meuH2);
-
-// container.appendChild(meuH1);
-
-// container.appendChild(novaDiv);
-
-
 const url = "https://jsonplaceholder.typicode.com/posts";
+const commentsUrl = "https://jsonplaceholder.typicode.com/comments?postId=1";
+//commentsUrl precisava de /comments?postId=1 por algum motivo desconehcido atualmente
 
-async function getPosts(){
-
+async function getComments() {
     // get -> fetch
-    const resp = await fetch(url);
-
+    const resp = await fetch(commentsUrl);
     const data = await resp.json();
 
-    console.log(data[2]);
-    data.map((post) => {
-        const divCard = document.createElement("div")
-        divCard.classList.add("card")
+    // console.log(data[2]);
 
-        const title = document.createElement("h1")
-        title.innerText = post.title
+    data.map((comment) => {
+        const divComment = document.createElement("div");
+        divComment.classList.add("cardComments");
 
-        const body = document.createElement("p")
-        body.innerText = post.body
+        const name = document.createElement("h3");
+        name.innerText = comment.name;
 
-        const link = document.createElement("a")
-        link.innerText = "Ler mais..."
-        link.setAttribute("href", "#")
+        const email = document.createElement("h3");
+        email.innerText = comment.email;
 
-        divCard.appendChild(title)
-        divCard.appendChild(body)
-        divCard.appendChild(link)
+        const body = document.createElement("p");
+        body.innerText = comment.body;
+        
+        const link = document.createElement("a");
+        link.innerText = "Voltar";
+        link.setAttribute("href", "index.html");
 
-        container.appendChild(divCard)
-    })
+       
+        divComment.appendChild(name);
+        divComment.appendChild(email);
+        divComment.appendChild(body);
+        divComment.appendChild(link);
+
+        container.appendChild(divComment);
+    });
 }
 
-getPosts()
+// CHAMANDO OS COMENTARIOS
+getComments();
