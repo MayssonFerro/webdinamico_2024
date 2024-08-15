@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="cc/styles.css">
+    <script src="js/qrcode.js" defer></script>
+</head>
+<body>
+    <section>
+        <div class="row">
+            <input type="color" class="light" value="#ffffff"/>
+            <input type="color" class="dark" value="#000000"/>
+            <select class="sizes">
+                <option value="100">100x100</option>
+                <option value="100">200x200</option>
+                <option value="100">300x300</option>
+                <option value="100">400x400</option>
+                <option value="100">500x500</option>
+            </select>
+            <input type="text" class="qr-text" placeholder="Enter QR Text"/>
+            <div id="qr-code"></div>
+            <div class="buttons">
+                <button class="btn share">Share</button>
+                <button class="btn download">Download</button>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</body>
+</html>
